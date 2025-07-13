@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ronit Shrestha | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0c0c0c;
+      color: #f0f0f0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background: radial-gradient(circle at top, #1a1a1a, #0c0c0c);
+      animation: fadeInDown 1.5s ease;
+    }
+
+   header img {
+  width: 150px;           /* fixed width */
+  height: 150px;          /* fixed height */
+  border-radius: 50%;     /* circle */
+  object-fit: cover;      /* crop and fill */
+  border: 3px solid #555;
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #fff;
+    }
+
+    header p {
+      color: #bbb;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background: #ffffff;
+      color: #000000;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #eaeaea;
+      transform: scale(1.05);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 30px;
+      animation: fadeInUp 1s ease;
+    }
+
+    h2 {
+      font-size: 2em;
+      border-left: 5px solid #888;
+      padding-left: 12px;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(255,255,255,0.1);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #777;
+      font-size: 14px;
+    }
+
+    a {
+      color: #ffffff;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      section {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="portfolio.jpg" alt="Ronit Shrestha">
+    <h1>Ronit Shrestha</h1>
+    <p>Computer Engineering Student | Robotics |  Programmer | Tech Explorer</p>
+    <a href="RonitCV2.pdf" class="btn" download>📄 Download Resume</a>
+  </header>
+
+  <section>
+    <h2>🧠 About Me</h2>
+    <p>I am a Computer Engineering student from Sankhu, Nepal, passionate about robotics, real-world programming, and building tech that matters. I like to explore everything </p>
+  </section>
+
+  <section>
+    <h2>💻 Skills</h2>
+    <div class="card">
+      <ul>
+        <li>C, C++, Python, HTML, CSS</li>
+        <li>Arduino,</li>
+        <li>Git, GitHub</li>
+  
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🚀 Projects</h2>
+    <div class="card">
+      <h3>🤖 Self-Balancing Robot</h3>
+      <p>Arduino + MPU6050 + Dual PID + Bluetooth tuning with EEPROM. Auto-balancing + rotation.</p>
+      <a href="https://github.com/ronit-739/Self_Balancing_Car.git">🔗 GitHub Link</a>
+    </div>
+
+    <div class="card">
+      <h3>🔐 Phishing URL Detector (in C)</h3>
+      <p>Detects phishing URLs using string comparison + Levenshtein distance. Shows "security percentage" in terminal.</p>
+      <a href="https://github.com/ronit-739/automatic-phising-detector.git">🔗 GitHub Link</a>
+    </div>
+
+    <div class="card">
+      <h3> Home Automation </h3>
+      <p>A project that allows you to control home appliance using button and voice comand via Bluetooth and arduino</p>
+      <a href="https://github.com/ronit-739/Home-automation.git">🔗 GitHub Link</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📜 Certificates</h2>
+    <div class="card">
+      <h3>CS50x – Harvard</h3>
+      <p>Certificate for Introduction to Computer Science (in progress)</p>
+      <a href="CS50P.pdf">🔗 View Certificate</a>
+    </div>
+
+    <div class="card">
+      <h3>Django Workshop</h3>
+      <p>Certificte for participating in Django Workshop held by ECAST</p>
+      <a href="Ronit_Shrestha_participation.pdf">🔗 View Certificate</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📫 Contact</h2>
+    <div class="card">
+   <p>Email: <strong>stharonit88@gmail.com</strong></p>
+      <p>GitHub: <a href="https://github.com/ronit-739" target="_blank">github.com/RonitShrestha</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ronit-shrestha-886365334
+">linkedin.com/in/ronitshrestha</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ronit Shrestha. Crafted with passion, precision, and pixels.</p>
+  </footer>
+</body>
+</html>
